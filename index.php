@@ -19,15 +19,15 @@
     <?php
 
        // Variáveis
-       $n1 = $_GET['n1'];
-       $n2 = $_GET['n2'];
-       $n3 = $_GET['n3'];
-       $n4 = $_GET['n4'];
+       @$n1 = $_GET['n1'];
+       @$n2 = $_GET['n2'];
+       @$n3 = $_GET['n3'];
+       @$n4 = $_GET['n4'];
        // Função que vai fazer o calculo das notas
-       $media = ($n1 + $n2 + $n3 + $n4)/4;
+       @$media = ($n1 + $n2 + $n3 + $n4)/4;
        // Retorna o resultado
        echo "Resultado: $media";
-
+       
        if ($media >= 7) { // Se for igual ou maior que 7, aprovado!
            echo ' = Aprovado';
 
